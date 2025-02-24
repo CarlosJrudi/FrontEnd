@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreeCodeCamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>CatPhotoApp</title>
 </head>
 <body>
     <main.>
@@ -49,22 +49,21 @@
             <form action="https://freecatphotoapp.com/submit-cat-photo">
                 <fieldset>
                     <legend>Is your cat an indoor or an outdoor cat?</legend>
-                    <label><input id="indoor" name="indoor-outdoor" type="radio" value="indoor"> Indoor </label>
+                    <label><input checked id="indoor" name="indoor-outdoor" type="radio" value="indoor"> Indoor </label> <!-- Tag label em todo o input-->
                     <label><input id="outdoor" name="indoor-outdoor" type="radio" value="outdoor"> Outdoor </label>
                 </fieldset>
                 <fieldset>
                     <legend>What's your cat's personality?</legend>
-                    <label><input id="indoor" name="indoor-outdoor" type="radio" value="indoor"> Indoor </label>
-                    <label><input id="outdoor" name="indoor-outdoor" type="radio" value="outdoor"> Outdoor </label>
-                </fieldset>
-                
-                <input type="text" name="catphptourl" placeholder="cat photo URL" required>
-                
-                
+                    <input checked id="loving" name="personality" type="checkbox" value="loving"> <label for="loving"> Loving </label>  <!-- Tag label apenas no texto -->
+                    <input id="lazy" name="personality" type="checkbox" value="lazy"> <label for="lazy"> Lazy </label>
+                    <input id="energetic" name="personality" type="checkbox" value="energetic"> <label for="lazy"> Energetic </label>
+                </fieldset>                
+                <input type="text" name="catphptourl" placeholder="cat photo URL" required>         
             </form>
-
         </section>
-
-</main.>
+</main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+</footer>
 </body>
 </html>
